@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-audio-spectrum/lib/AudioSpectrum.js b/node_modules/react-audio-spectrum/lib/AudioSpectrum.js
+index ed19e5b..ebf110f 100644
+--- a/node_modules/react-audio-spectrum/lib/AudioSpectrum.js
++++ b/node_modules/react-audio-spectrum/lib/AudioSpectrum.js
+@@ -74,7 +74,7 @@ function (_Component) {
+ 
+       var ctx = _this.audioCanvas.getContext('2d');
+ 
+-      var gradient = ctx.createLinearGradient(0, 0, 0, 300);
++      var gradient = ctx.createLinearGradient(0, 0, 0, cheight);
+ 
+       if (_this.props.meterColor.constructor === Array) {
+         var stops = _this.props.meterColor;
