@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "rm -rf dist && parcel build ./src/index.html --no-source-maps --out-dir dist --public-url ./"
+    "dev": "parcel ./src/index.html",
+    "build": "rm -rf dist && parcel build ./src/index.html --no-source-maps --out-dir dist --public-url ./",
+    "watch": "parcel watch ./src/index.html --no-source-maps --out-dir dist --public-url ./",
+    "patch": "patch-package"
   },
   "keywords": [
     "parcel",
@@ -15,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.8.6",
+    "react-animated-css": "^1.2.1",
     "react-audio-spectrum": "^0.1.0",
     "react-dom": "^16.8.6"
   },
